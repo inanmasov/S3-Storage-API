@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  s3:
+    build: ./
+    command: ./S3
+    ports:
+      - "8001:8001"
+      - "8442:8442"
+      - "8443:8443"
+    environment:
+      - API_TOKEN=*****
